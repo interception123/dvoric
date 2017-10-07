@@ -54,15 +54,14 @@
 				<span id="title">ТОВАРЫ</span>
 				<div id="shop">
 					<div id="grid">
-						<div class="first"><img src="grid11.jpg"></div>
-						<div class="first"><img src="grid12.jpg"></div>
-						<div class="first"><img src="grid13.jpg"></div>
-						<div class="second"><img src="grid21.jpg"></div>
-						<div class="second"><img src="grid22.jpg"></div>
-						<div class="second"><img src="grid23.jpg"></div>
-						<div class="third"><img src="grid31.jpg"></div>
-						<div class="third"><img src="grid32.jpg"></div>
-						<div class="third"><img src="grid33.jpg"></div>
+						<div class="grid1"><img src="grid11.jpg"></div>
+						<div class="grid1"><img src="grid12.jpg"></div>
+						<div class="grid1"><img src="grid13.jpg"></div>
+						<div class="grid1"><img src="grid21.jpg"></div>
+						<div class="grid1"><img src="grid22.jpg"></div>
+						<div class="grid1"><img src="grid23.jpg"></div>
+						<div class="grid1"><img src="grid31.jpg"></div>
+						<div class="grid1"><img src="grid32.jpg"></div>
 					</div>
 				</div>
 				<span id="bot_title">ДОСТАВЛЯЕМ РАДОСТЬ ДЕТЯМ!</span>
@@ -113,7 +112,7 @@
 
             var clickedLink = e.target;
             activeLink = clickedLink.itemID;
-            
+            n = clickedLink.itemID;
             changePosition(clickedLink);
         }
 		
@@ -133,7 +132,7 @@
         }
 
         setInterval(function() {
-        	if (n != 3) {
+        	if (n < 3) {
         		n++;
         	} else {
         		n = 0;
