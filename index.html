@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dvoric</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<body>
+	<div id="page-wrapper">
+		<header id="header">
+			<div class="container">
+				<div id="preview">
+					<img src="logo.png">
+					<img src="name.png">
+				</div>
+				<div id="middle_text">
+					<span id="text">ЗВОНОК ПО РОССИИ БЕСПЛАТНЫЙ</span>
+					<span id="num">8 800 250-24-99</span>
+				</div>
+				<div id="right_text">
+					<span id="numr">8 911 460-93-99</span>
+					<button>Заказать обратный звонок</button>
+				</div>
+				<div id="main_menu">
+					<ul>
+						<li> <a href="#">Главная</a></li>
+						<li> <a href="#">Магазин</a></li>
+						<li> <a href="#">Галерея</a></li>
+						<li> <a href="#">Доставка</a></li>
+						<li> <a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div id="content-wrapper" class="container">
+			<div id="contentContainer">
+				<div id="wrapper" style="left: 0px;">
+					<div id="itemOne" class="content"><img src="1.png" alt=""></div>
+					<div id="itemTwo" class="content"><img src="2.png" alt=""></div>
+					<div id="itemThree" class="content"><img src="3.jpg" alt=""></div>
+					<div id="itemFour" class="content"><img src="4.jpg" alt=""></div>
+				</div>
+			</div>
+			<div id="navLinks">
+				<ul>
+					<li class="itemLinks" data-pos="0px"></li>
+					<li class="itemLinks" data-pos="-1100px"></li>
+					<li class="itemLinks" data-pos="-2200px"></li>
+					<li class="itemLinks" data-pos="-3300px"></li>
+				</ul>
+			</div>
+			<div id="page">
+				<span id="title">ТОВАРЫ</span>
+				<div id="shop">
+					<div id="grid">
+						<div class="first"><img src="grid11.jpg"></div>
+						<div class="first"><img src="grid12.jpg"></div>
+						<div class="first"><img src="grid13.jpg"></div>
+						<div class="second"><img src="grid21.jpg"></div>
+						<div class="second"><img src="grid22.jpg"></div>
+						<div class="second"><img src="grid23.jpg"></div>
+						<div class="third"><img src="grid31.jpg"></div>
+						<div class="third"><img src="grid32.jpg"></div>
+						<div class="third"><img src="grid33.jpg"></div>
+					</div>
+				</div>
+				<span id="bot_title">ДОСТАВЛЯЕМ РАДОСТЬ ДЕТЯМ!</span>
+				<span id="paragraph_title">Добро пожаловать в весёлый дворик!</span>
+				<p class="paragraph"> <img id="parimg" src="par.jpg">У нас Вы сможете найти разнообразное оборудование для игр и занятий спортом на открытом воздухе. Наша компания является прямым поставщиком различного игрового и спортивного оборудования и официальным дилером торговых марок <b>«SELWOOD PRODUCTS»,«HUDORA»,«AVYNA»,«KOGGI»</b>.
+				Наши специалисты внимательно выбирают товары иностранных производителей, обращая внимание исключительно на качество и безопасность. Все игровое и спортивное оборудование, предложенное на нашем сайте, имеется в наличии на складах в России.
+				Все товары сертифицированы.</p>
+				<p class="paragraph">
+					Вы сможете купить у нас <a href="#">детские игровые комплексы и площадки</a>, <a href="#">детские игровые домики</a>, надувные батуты для игр на открытом воздухе,  пружинные батуты, песочницы, горки, качели, балансиры, турники, футбольные ворота, волейбольные сетки, баскетбольные корзины, спортивные игры, а также большие конструкторы для улицы и дома с доставкой в любой город России, Белоруссии и Казахстана.
+				</p>
+				<span id="gap" class="paragraph">Наши консультанты с готовностью ответят на все интересующие Вас вопросы.<br></span>
+				<p id="bolded" class="paragraph">Компания «Веселый дворик» предлагает своим покупателям гибкую систему скидок и приглашает к сотрудничеству оптовиков и региональных дилеров.</p>
+				<span class="paragraph"><b>E-mail для связи:</b> <a href="#">info@dvoric.com</a></span>
+				<p class="paragraph"><b>Тел: 8-800-250-24-99, 8-495-989-57-44, 8-911-460-93-99.</b></p>
+				<p class="paragraph"><b>140004 Москва г. Люберцы, ул. Транспортная, дом 1</b></p>
+				<div id="img_bot"><img src="devochka.jpg" alt=""></div>
+				<div id="reviews"><span id="review_title">ОТЗЫВЫ</span>
+				<p id="review_content">Нам понравились площадки на этом сайте: большой выбор и дизайн красивый. Дочка выбрала Кингсвуд. После оплаты мы получили площадку довольно быстро — через 3 дня. Сборка оказалась несложной и инструкция простая, доступная. Теперь пользуемся и радуемся — и дочка счастлива и мы любуемся — очень красиво смотрится на нашем участке!</p>
+				<span id="review_fio">Елена. Самара<br><span>
+				<button id="review_btn">Оставить отзыв</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+    	// just querying the DOM...like a boss!
+        var links = document.querySelectorAll(".itemLinks");
+        var wrapper = document.querySelector("#wrapper");
+        var n = 0;
+        
+        // the activeLink provides a pointer to the currently displayed item
+        var activeLink = 0;
+        
+        // setup the event listeners
+        for (var i = 0; i < links.length; i++) {
+            var link = links[i];
+            link.addEventListener('click', setClickedItem, false);
+            
+            // identify the item for the activeLink
+            link.itemID = i;
+        }
+
+        // set first item as active
+        links[activeLink].classList.add("active");
+
+        function setClickedItem(e) {
+            removeActiveLinks();
+
+            var clickedLink = e.target;
+            activeLink = clickedLink.itemID;
+            
+            changePosition(clickedLink);
+        }
+		
+        function removeActiveLinks() {
+            for (var i = 0; i < links.length; i++) {
+                links[i].classList.remove("active");
+            }
+        }
+        
+        // Handle changing the slider position as well as ensure
+        // the correct link is highlighted as being active
+		function changePosition(link) {
+        	var position = link.getAttribute("data-pos");
+            wrapper.style.left = position;
+            
+            link.classList.add("active");
+        }
+
+        setInterval(function() {
+        	if (n != 3) {
+        		n++;
+        	} else {
+        		n = 0;
+        	}
+        	removeActiveLinks();
+        	var a = document.querySelectorAll(".itemLinks");
+        	var position = a[n].getAttribute("data-pos");
+        	wrapper.style.left = position;
+        	a[n].classList.add("active");
+        }, 6000);
+    </script>
+</body>
+</html>

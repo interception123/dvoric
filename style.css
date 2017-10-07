@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+* {
+	font-family: "Merriweather", Arial, sans-serif;
+}	
+
+html, body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 5000px;
+}
+
+.container {
+	width: 1100px;
+	margin: 0 auto;
+}
+
+#page-wrapper {
+
+}
+
+#contentContainer {
+	width: 1100px;
+	height: 500px;
+	overflow: hidden;
+}
+
+#wrapper {
+	width: 4400px;
+	position: relative;
+	transition: left .5s ease-in-out;
+}
+
+.content {
+	float: left;
+	height: 500px;
+	width: 1100px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#navLinks {
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#navLinks > ul {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	margin-top: 6px;
+}
+
+#navLinks > ul > li {
+	float: left;
+	text-align: center;
+	margin: 10px;
+	list-style: none;
+	cursor: pointer;
+	background-color: #ccc;
+	padding: 5px;
+	border-radius: 50%;
+	border: black 2px solid;
+}
+
+#navLinks > ul > li.active {
+	background-color: #333333;
+	color: #fff;
+	outline-width: 7px;
+}
+
+#preview {
+	width: 42%;
+	display: inline-block;
+	float: left;
+}
+
+#middle_text {
+	display: inline-block;
+	float: left;
+	width: 280px;
+	margin-top: 25px;
+}
+
+#text {
+	font-size: 14px;
+}
+
+#num {
+	font-size: 29px;
+}
+
+#right_text {
+	float: right;
+	width: 210px;
+	margin-top: 20px;
+}
+
+#right_text > span {
+	font-size: 24px;
+	text-align: center;
+}
+
+#right_text > button {
+	background-color: #2e7d2d;
+	border: #256C24;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+html {
+	background-image: url(bg.png);
+}
+
+#main_menu {
+	background: #2e7d2d;
+	height: 75px;
+	width: 100%;
+	border-radius: 5px;
+	float: left;
+}
+
+#main_menu > ul {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	font-size: 0;
+	overflow: hidden;
+}
+
+#main_menu > ul > li {
+	display: inline-block;
+	list-style: none;
+	font-size: 19px;
+}
+
+#main_menu > ul > li a {
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	height: 100%;
+	line-height: 75px;
+	padding: 0 20px;
+	position: relative;
+	z-index: 999;
+}
+
+#main_menu > ul > li a:hover {
+	color: #333;
+}
+
+#main_menu > ul > li a::before {
+	content: " ";
+	position: absolute;
+	left: 0;
+	top: -30px;
+	width: 100%;
+	height: 150px;
+	transform: rotate(20deg);
+	background-color: rgba(255, 255, 255, 1);
+	z-index: -1;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+#main_menu > ul > li a:hover::before {
+	opacity: 1;
+}
+
+#content {
+	width: 100%;
+	padding-left: 10px;
+	float:left;
+	padding-bottom: -5px;
+}
+#page {
+	width: 100%;
+	float: left;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 7px;
+	padding-top: 20px;
+}
+
+#title {
+	font-size: 30px;
+	margin-left: 465px;
+}
+
+#shop {
+	width: 100%;
+	height: 650px;
+}
+
+#grid {
+	width: 900px;
+	height: 500px;
+	margin-left: 100px;
+	margin-top: 20px;
+	padding: 0;
+}
+
+.first {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	width: 296px;
+	height: 200px;
+}
+
+.first > img {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+
+.second {
+	display: inline-block;
+	width: 296px;
+	height: 200px;
+}
+
+.second > img {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+
+.third {
+	display: inline-block;
+	width: 296px;
+	height: 200px;
+}
+
+.third > img {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+
+#bot_title {
+	display: block;
+	width: 100%;
+	margin-left: 260px;
+	margin-bottom: 20px;
+	font-family: "Merriweather";
+	font-size: 34px;
+}
+
+#paragraph_title{
+	font-weight: bold;
+	margin-left: 20px;
+}
+
+#parimg {
+	float: right;
+	margin-right: 20px;
+	border-radius: 10px;
+}
+
+.paragraph {
+	margin-left: 20px;
+}
+
+#bolded {
+	font-weight: bold;
+}
+
+#img_bot {
+	width: 50%;
+	margin: 50px auto;
+}
+
+#img_bot > img {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+
+#reviews {
+	background: green;
+	margin: 0 auto;
+	width: 700px;
+	height: 270px;
+	border-radius: 10px;
+}
+
+#review_title {
+	margin-left: 290px;
+	font-size: 22px;
+}
+
+#review_content {
+	margin: 10px 10px;
+}
+
+#review_fio {
+	font-size: 18px;
+	margin-left: 275px;
+}
+
+#review_btn {
+	font-size: 18px;
+	padding: 10px 10px;
+	margin-top: 25px;
+	margin-left: 250px;
+}
+
